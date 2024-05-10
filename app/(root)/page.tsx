@@ -1,9 +1,9 @@
 import React from 'react'
 import HeaderBox from '@/components/HeaderBox'
 import TotalBalanceBox from '@/components/TotalBalanceBox'
+import { loggedInMock } from '@/constants'
 
 const Home = () => {
-  const loggedIn = { firstName: 'John', lastName: 'Doe' }
   return (
     <section className="home">
       <div className="home-content">
@@ -11,7 +11,7 @@ const Home = () => {
           <HeaderBox
             type="greeting"
             title="Welcome"
-            user={loggedIn?.firstName || 'Guest'}
+            user={loggedInMock?.firstName || 'Guest'}
             subtext="Access and manage your account and transactions efficiently."
           />
           <TotalBalanceBox
