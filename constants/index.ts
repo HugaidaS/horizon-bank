@@ -136,4 +136,8 @@ export const transactionCategoryStyles = {
   }
 }
 
-export const loggedInMock = { firstName: 'Victoria', lastName: 'Doe' }
+export const loggedInMock = {
+  firstName: 'Victoria',
+  lastName: 'Doe',
+  email: 'vdoe@example.com'
+}

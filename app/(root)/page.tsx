@@ -2,6 +2,7 @@ import React from 'react'
 import HeaderBox from '@/components/HeaderBox'
 import TotalBalanceBox from '@/components/TotalBalanceBox'
 import { loggedInMock } from '@/constants'
+import RightSidebar from '@/components/RightSidebar'
 
 const Home = () => {
   return (
@@ -20,7 +21,9 @@ const Home = () => {
             totalCurrentBalance={1284}
           />
         </header>
+        recent transactions
       </div>
+      <RightSidebar user={loggedInMock} transactions={[]} banks={[{}, {}]} />
     </section>
   )
 }
